@@ -1,0 +1,8 @@
+<h1><%= @list.name %></h1>
+ <hr />
+ <p>What would you like to do?</p>
+ <%= link_to 'View Destination', sub_topics_path(@list) %>
+ <br />
+ <%= link_to 'Edit List', edit_sub_path(@list) %>
+ <br />
+ <%= link_to 'Delete List', @list, method: :delete, data: { confirm: 'Confirm delete?' }%>
